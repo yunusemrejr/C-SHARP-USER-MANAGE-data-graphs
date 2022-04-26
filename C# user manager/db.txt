@@ -1,0 +1,25 @@
+CREATE SCHEMA users;
+
+
+
+CREATE TABLE `users`.`usertable` (
+ID int NOT NULL Primary Key,
+NV float not null,
+username varchar(50),
+usersurname varchar(50),
+category varchar(50),
+mission varchar(50)
+
+);
+
+
+INSERT INTO `users`.`usertable` (`ID`, `NV`) VALUES ('1', '10.22');
+INSERT INTO `users`.`usertable` (`ID`, `NV`) VALUES ('2', '7.21');
+INSERT INTO `users`.`usertable` (`ID`, `NV`) VALUES ('3', '5.77');
+INSERT INTO `users`.`usertable` (`ID`, `NV`) VALUES ('4', '3.21');
+INSERT INTO `users`.`usertable` (`ID`, `NV`) VALUES ('5', '9.44');
+UPDATE `users`.`usertable` SET `username` = 'Yunus', `usersurname` = 'Vurgun', `category` = 'New Member', `mission` = 'Programmer' WHERE (`ID` = '1');
+UPDATE `users`.`usertable` SET `username` = 'Fred', `usersurname` = 'FreeMan', `category` = 'New Member', `mission` = 'Programmer' WHERE (`ID` = '2');
+UPDATE `users`.`usertable` SET `username` = 'Ted', `usersurname` = 'Tedsons', `category` = 'New Member', `mission` = 'Designer' WHERE (`ID` = '3');
+UPDATE `users`.`usertable` SET `username` = 'Someone', `usersurname` = 'Someonesons', `category` = 'New Member', `mission` = 'Programmer' WHERE (`ID` = '4');
+UPDATE `users`.`usertable` SET `username` = 'Mr. BlaBla', `usersurname` = 'someSurname', `category` = 'New Member', `mission` = 'Designer' WHERE (`ID` = '5');
